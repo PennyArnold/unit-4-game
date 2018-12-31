@@ -17,6 +17,95 @@
     <title>Document</title>
 </head>
 <body>
+  <div class="container">   
+  <!--Game heading using bootstrap jumbotron-->
+    <div class="jumbotron" style="background-color:rgb(166, 83, 245); color: white">
+        <div class="container">
+            <h1 class="text-center">
+                <strong>Crystal Collector Game</strong>
+            </h1>
+        </div>
+    <!--Game Instructions-->
+    <div class="row">
+        <!--Instructions container-->
+        <div class="col-md-12">
+            <div class="card-mb-4">
+                <div class="card-header" style="background-color: rgb(255, 189, 47)">
+                    <h3 class="card-title text-center">Instructions</h3>
+                </div>
+                <div class="card-body">
+                    <p class="text-center"><small>You will be given a random number at the start of the game.<br>
+                    There are four crystals below. Click on a crystal to add points to your total score. Win the game by clicking the crystals to match the random number.  Lose the game when you click a crystal and the number goes over the random number. The value of each crystal is hidden from you until you click on it.<br>
+                    For each new game, the random number changes and the value of each crystal changes.<br>
+                    Good luck!</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Scores and Crystals-->
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card-mb-4">
+                <div class="card-header" style="background-color: rgb(255, 189, 47)">
+                    <h3 class="card-title text-center">Target Score</h3>
+                </div>
+                <div class="card-body">
+                    <h3 class="text-center" id="targetScore">0</h3>
+                </div>
+            </div>
+        </div>
+        <!--Your score-->
+        <div class="col-md-3">
+                <div class="card-mb-4">
+                    <div class="card-header" style="background-color: rgb(255, 189, 47)">
+                        <h3 class="card-title text-center">Your Score</h3>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center" id="yourScore">0</h3>
+                    </div>
+                </div>
+            </div>
+             <!--Wins Count-->
+       <div class="row">
+            <div class="col-md-3">
+                <div class="card-mb-4">
+                    <div class="card-header" style="background-color: rgb(255, 189, 47)">
+                        <h3 class="card-title text-center">Win Count</h3>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center" id="winCount">0</h3>
+                    </div>
+                </div>
+            </div>
+        <!--Loss Count-->  
+        <div class="col-md-3">
+                <div class="card-mb-4">
+                    <div class="card-header" style="background-color: rgb(255, 189, 47)">
+                        <h3 class="card-title text-center">Loss Count</h3>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center" id="lossCount">0</h3>
+                    </div>
+                </div>
+            </div>
+        <!--Crystals-->
+        <div class="card-mb-6">
+            <div class="card-header" style="background-color: rgb(255, 189, 47)">
+                <h3 class="card-title text-center">Crytal Count</h3>
+            </div>
+            <div class="card-body">
+            <img src="assets\image\Amethyst.png" id="purple">
+            <img src="assets\image\orange.png" id="orange">
+            <img src="assets\image\green.png" id="green">
+            <img src="assets\image\star.png" id="star">
+            </div>
+        </div>
+    </div>  
+    
+
+
+
+  </div>
     
 </body>
 </html>
