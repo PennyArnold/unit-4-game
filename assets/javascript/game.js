@@ -26,7 +26,10 @@ var targetScore = 0;
 //Wins and Losses
 var winCount = 0;
 var lossCount = 0;
+
+//this little jewel made my numbers show up on the html - it allows my functions to work in order or something like that...
 $(document).ready(function () {
+
 //functions
 //math function so that we can get some random numbers
 var getRandom = function(min, max) {
@@ -58,6 +61,7 @@ console.log("Green: " + crystal.green.value + " | Orange: " + crystal.orange.val
 console.log("---------------------------");
 };
 
+
 //Check if we won or lost and reset the game
 var checkWin = function() {
 
@@ -85,16 +89,19 @@ var checkWin = function() {
     // Change the win count in HTML through jQuery
      $("#win-Count").text(winCount);
 
+
     //Restart the gaem
     startGame();
     }
 };
 
+
+
 //when you click on the crystals there should be a value added...
 var addValues = function(crystal) {
 
  //Change Your Score
- yourScore =+ crystal.value; 
+ yourScore += crystal.value; 
  
  //Add jQuery to connect to html
  $("#your-Score").text(yourScore);
@@ -107,6 +114,8 @@ var addValues = function(crystal) {
 //main process
 
 //starts the game the first time.
+
+    
 
 startGame();
 
