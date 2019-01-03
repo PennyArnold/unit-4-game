@@ -26,7 +26,7 @@ var targetScore = 0;
 //Wins and Losses
 var winCount = 0;
 var lossCount = 0;
-
+$(document).ready(function () {
 //functions
 //math function so that we can get some random numbers
 var getRandom = function(min, max) {
@@ -83,7 +83,7 @@ var checkWin = function() {
     winCount++;
 
     // Change the win count in HTML through jQuery
-    $("#win-Count").text(winCount);
+     $("#win-Count").text(winCount);
 
     //Restart the gaem
     startGame();
@@ -94,7 +94,7 @@ var checkWin = function() {
 var addValues = function(crystal) {
 
  //Change Your Score
- yourScore += crystal.value; 
+ yourScore =+ crystal.value; 
  
  //Add jQuery to connect to html
  $("#your-Score").text(yourScore);
@@ -107,11 +107,12 @@ var addValues = function(crystal) {
 //main process
 
 //starts the game the first time.
+
 startGame();
 
 $("#purple").click(function() {
    addValues(crystal.purple);
-   console/log(addValues);
+  
 });
 
 $("#green").click(function() {
@@ -125,6 +126,6 @@ $("#orange").click(function() {
 $("#star").click(function() {
    addValues(crystal.star);
 });
-
+});
 
 
